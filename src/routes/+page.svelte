@@ -2,8 +2,7 @@
 	import PostWithGallery from '$lib/PostWithGallery.svelte';
 	import PostWithVideo from '$lib/PostWithVideo.svelte';
 	import TikTokThumbnail from '$lib/TikTokThumbnail.svelte';
-	import { IconPlayerPlay, IconPlayerPlayFilled } from '@tabler/icons-svelte';
-	import { onMount } from 'svelte';
+	import { IconPlayerPlayFilled } from '@tabler/icons-svelte';
 
 	let v1PreviousViewable = false;
 	let v2PreviousViewable = false;
@@ -79,14 +78,6 @@
 		'cakes/m.jpg',
 		'cakes/table.jpg'
 	];
-
-	onMount(() => {
-		// @ts-ignore
-		if (typeof window.instgrm !== 'undefined') {
-			// @ts-ignore
-			window.instgrm.Embeds.process();
-		}
-	});
 </script>
 
 <div style:width="600px" class="m-auto">
@@ -169,15 +160,6 @@ which was printed on thousands of T-shirts given to UNC students on the first da
 </div>
 
 <style>
-	:global(iframe.instagram-media) {
-		position: static !important;
-	}
-
-	:global(.instagram-media),
-	:global(.instagram-media-registered) {
-		width: 600px !important;
-	}
-
 	.story-head {
 		font-size: 0.9rem;
 		color: #222;
