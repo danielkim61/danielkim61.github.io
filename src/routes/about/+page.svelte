@@ -1,0 +1,47 @@
+<script lang="ts">
+	import DanielAvatar from '$lib/DanielAvatar.svelte';
+	import { Container } from '@sveltestrap/sveltestrap';
+</script>
+
+<Container class="pt-4 px-5">
+	<div style:max-width="700px">
+		<DanielAvatar size={144} />
+		<p class="pt-4">Hello! I’m Daniel.</p>
+		<p>
+			I work for CVS Health in the
+			<a
+				href="https://jobs.cvshealth.com/general-management-talent-programs/general-management-development-program/"
+			>
+				General Management Development Program</a
+			>, sponsored by CVS President and CEO, Karen Lynch. I'm currently an account manager for Aetna
+			in the New York & New Jersey markets. Prior to that, I spent a year and a half analyzing
+			mental health data to help position CVS Health's behavioral health products and services.
+		</p>
+		<p>Outside of corporate healthcare, I enjoy a host of creative endeavors:</p>
+
+		<ul>
+			<li>
+				I run a professional baking business which has catered cakes and cookies for weddings,
+				corporate events, and birthday parties. I have done graphic design work which I sold to
+				various top-tier universities, and I used to run a gift-wrapping nonprofit.
+			</li>
+			<li>
+				I'm well-versed in the current social media landscape – I have a lifestyle TikTok with 22k
+				followers, more than 20 million total views, and have done brand deals with Adobe, Hims &
+				Hers, Match Group, Truff and others. I understand how to cultivate an audience and what
+				makes content relatable and interesting.
+			</li>
+			<li>
+				I have some experience writing code in Python and RStudio from research I co-published in
+				"Circulation" which modeled cardiovascular health at a county level in North Carolina.
+			</li>
+		</ul>
+	</div>
+</Container>
+
+<style>
+	p,
+	li {
+		line-height: 2rem;
+	}
+</style>
