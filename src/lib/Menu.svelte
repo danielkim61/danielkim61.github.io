@@ -1,3 +1,6 @@
+<script lang="ts">
+</script>
+
 <div class="py-4 vh-100 sticky-top">
 	<div class="h-100 menu-border pe-5">
 		<a class="mb-4 nav-link title" href="/">Daniel Kim</a>

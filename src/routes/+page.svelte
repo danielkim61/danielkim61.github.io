@@ -2,7 +2,52 @@
 	import PostWithGallery from '$lib/PostWithGallery.svelte';
 	import PostWithVideo from '$lib/PostWithVideo.svelte';
 	import TikTokThumbnail from '$lib/TikTokThumbnail.svelte';
+	import { IconPlayerPlay, IconPlayerPlayFilled } from '@tabler/icons-svelte';
 	import { onMount } from 'svelte';
+
+	let v1PreviousViewable = false;
+	let v2PreviousViewable = false;
+	let v3PreviousViewable = false;
+	let v1Viewable: boolean;
+	let v2Viewable: boolean;
+	let v3Viewable: boolean;
+	let v1Paused = true;
+	let v2Paused = true;
+	let v3Paused = true;
+
+	$: {
+		// TODO less hacky
+		if (v1Viewable != v1PreviousViewable) {
+			if (v1Viewable) {
+				v1Paused = false;
+				v2Paused = true;
+				v3Paused = true;
+			} else {
+				v1Paused = true;
+			}
+			v1PreviousViewable = v1Viewable;
+		} else if (v2Viewable != v2PreviousViewable) {
+			if (v2Viewable) {
+				v1Paused = true;
+				v2Paused = false;
+				v3Paused = true;
+			} else {
+				v2Paused = true;
+				v3Paused = !v3Viewable;
+			}
+			v2PreviousViewable = v2Viewable;
+		} else if (v3Viewable != v3PreviousViewable) {
+			if (v3Viewable) {
+				v1Paused = true;
+				v2Paused = true;
+				v3Paused = false;
+			} else {
+				v2Paused = !v2Viewable;
+				v3Paused = true;
+			}
+			v3PreviousViewable = v3Viewable;
+		}
+	}
 
 	let bakingImages = [
 		'cookies/xmas1.jpg',
@@ -48,27 +93,39 @@
 	<div class="d-flex mb-5">
 		<div class="story-head d-flex flex-column align-items-center">
 			<TikTokThumbnail story url="https://www.tiktok.com/t/ZT84duJXY/" img="tiktok/hairspray.jpg" />
-			▶️ 4.8M
+			<div class="d-flex align-items-center">
+				<IconPlayerPlayFilled class="d-inline me-1" size={16} /> 4.8M
+			</div>
 		</div>
 		<div class="story-head d-flex flex-column align-items-center">
 			<TikTokThumbnail story url="https://www.tiktok.com/t/ZT84d59wr/" img="tiktok/vitamix.jpg" />
-			▶️ 165K
+			<div class="d-flex align-items-center">
+				<IconPlayerPlayFilled class="d-inline me-1" size={16} /> 165K
+			</div>
 		</div>
 		<div class="story-head d-flex flex-column align-items-center">
 			<TikTokThumbnail story url="https://www.tiktok.com/t/ZT84dsYtm/" img="tiktok/apple.jpg" />
-			▶️ 5.3M
+			<div class="d-flex align-items-center">
+				<IconPlayerPlayFilled class="d-inline me-1" size={16} /> 53M
+			</div>
 		</div>
 		<div class="story-head d-flex flex-column align-items-center">
 			<TikTokThumbnail story url="https://www.tiktok.com/t/ZT84d4fsU/" img="tiktok/cake.jpg" />
-			▶️ 50.5K
+			<div class="d-flex align-items-center">
+				<IconPlayerPlayFilled class="d-inline me-1" size={16} /> 51K
+			</div>
 		</div>
 		<div class="story-head d-flex flex-column align-items-center">
 			<TikTokThumbnail story url="https://www.tiktok.com/t/ZT84dp7tq/" img="tiktok/kdrama.jpg" />
-			▶️ 262K
+			<div class="d-flex align-items-center">
+				<IconPlayerPlayFilled class="d-inline me-1" size={16} /> 262K
+			</div>
 		</div>
 		<div class="story-head d-flex flex-column align-items-center">
 			<TikTokThumbnail story url="https://www.tiktok.com/t/ZT84dx22E/" img="tiktok/graduate.jpg" />
-			▶️ 1.7M
+			<div class="d-flex align-items-center">
+				<IconPlayerPlayFilled class="d-inline me-1" size={16} /> 1.7M
+			</div>
 		</div>
 	</div>
 
@@ -78,6 +135,8 @@
 	/>
 
 	<PostWithVideo
+		bind:viewable={v1Viewable}
+		bind:paused={v1Paused}
 		src="custom_print.mp4"
 		caption="Animation created using Jitter, CapCut, and iMovie to promote custom prints I drew of different universities
 	across the US."
@@ -95,8 +154,17 @@ which was printed on thousands of T-shirts given to UNC students on the first da
 	/>
 
 	<PostWithVideo
+		bind:viewable={v2Viewable}
+		bind:paused={v2Paused}
 		src="la.mp4"
 		caption="To advertise my print business, I animated quick, cheeky videos like this one to bring in more customers."
+	/>
+
+	<PostWithVideo
+		bind:viewable={v3Viewable}
+		bind:paused={v3Paused}
+		src="berkeley.mp4"
+		caption="Each print drawn on iPad Pro using Procreate"
 	/>
 </div>
 

@@ -3,26 +3,22 @@
 	import Post from '$lib/Post.svelte';
 	import IntersectionObserver from 'svelte-intersection-observer';
 
-	var videoElement: HTMLVideoElement;
-
 	export let src: string;
 	export let caption: string;
+	export let viewable = false;
+	export let paused: boolean;
+
+	let videoElement: HTMLVideoElement;
 </script>
 
 <Post>
 	<IntersectionObserver
 		element={videoElement}
 		threshold={0.5}
-		on:observe={(e) => {
-			if (e.detail.isIntersecting) {
-				videoElement.play();
-			} else {
-				videoElement.pause();
-			}
-		}}
+		on:observe={(e) => (viewable = e.detail.isIntersecting)}
 	>
 		<!-- svelte-ignore a11y-media-has-caption -->
-		<video class="w-100" bind:this={videoElement} muted loop controls>
+		<video class="w-100" bind:paused bind:this={videoElement} muted loop controls>
 			<source {src} />
 			Your browser does not support the video tag.
 		</video>

@@ -14,9 +14,8 @@
 	}
 </script>
 
-<button class="btn btn-link {classes}" on:click={toggle}>
-	<img class:story class="img-fluid" src={img} alt="TikTok Video Thumbnail" />
-	<div class="story-border" />
+<button class="btn {classes}" on:click={toggle}>
+	<img class:story class="img-fluid w-100" src={img} alt="TikTok Video Thumbnail" />
 </button>
 
 <Modal body {isOpen} {toggle}>
@@ -28,26 +27,18 @@
 		margin: 0;
 		padding: 0;
 		position: relative;
-		border: 0;
+		border: none;
 		padding-right: 0.25rem;
 		padding-bottom: 0.25rem;
 	}
 	img {
-		width: 400px;
+		max-width: 400px;
 	}
 	img.story {
 		aspect-ratio: 1;
 		object-fit: cover;
 		border-radius: 50%;
-	}
-	.story-border {
-		position: absolute;
-		left: 0;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		border: 1px solid #00000020;
-		border-radius: 50%;
-		z-index: 10;
+		outline: 1px solid #00000020;
+		outline-offset: -1px;
 	}
 </style>
