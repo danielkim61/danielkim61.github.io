@@ -4,6 +4,7 @@
 	import TikTokThumbnail from '$lib/TikTokThumbnail.svelte';
 	import { IconPlayerPlayFilled } from '@tabler/icons-svelte';
 	import { base } from '$app/paths';
+	import CreativeHighlights from '$lib/CreativeHighlights.svelte';
 
 	let v1PreviousViewable = false;
 	let v2PreviousViewable = false;
@@ -81,8 +82,8 @@
 	];
 </script>
 
-<div style:width="600px" class="m-auto">
-	<div class="d-flex mb-5">
+<div class="m-auto px-2" style:max-width="600px">
+	<div class="d-flex mb-4 mb-md-5">
 		<div class="story-head d-flex flex-column align-items-center">
 			<TikTokThumbnail story url="https://www.tiktok.com/t/ZT84duJXY/" img="tiktok/hairspray.jpg" />
 			<div class="d-flex align-items-center">
@@ -101,7 +102,7 @@
 				<IconPlayerPlayFilled class="d-inline me-1" size={16} /> 5.3M
 			</div>
 		</div>
-		<div class="story-head d-flex flex-column align-items-center">
+		<div class="story-head d-none d-md-flex flex-column align-items-center">
 			<TikTokThumbnail story url="https://www.tiktok.com/t/ZT84d4fsU/" img="tiktok/cake.jpg" />
 			<div class="d-flex align-items-center">
 				<IconPlayerPlayFilled class="d-inline me-1" size={16} /> 51K
@@ -158,6 +159,10 @@ which was printed on thousands of T-shirts given to UNC students on the first da
 		src="berkeley.mp4"
 		caption="Each print is drawn with an Apple Pencil on iPad Pro using Procreate"
 	/>
+
+	<div class="d-block d-lg-none">
+		<CreativeHighlights />
+	</div>
 </div>
 
 <style>
@@ -165,6 +170,8 @@ which was printed on thousands of T-shirts given to UNC students on the first da
 		font-size: 0.9rem;
 		color: #222;
 		gap: 2px;
+		width: 0;
+		flex: 1 1 0;
 	}
 	.story-head:not(:last-child) {
 		margin-right: 8px;

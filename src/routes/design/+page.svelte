@@ -37,9 +37,9 @@
 
 <Gallery {isOpen} {toggle} bind:index images={images.map((i) => i.src)} />
 
-<Row class="ms-5 gy-3 gx-3">
+<Row class="ms-md-5 gy-3 gx-3">
 	{#each images as img, i}
-		<Col md="6">
+		<Col xs="6">
 			<button
 				class="btn p-0 m-0 position-relative"
 				style:border="none"

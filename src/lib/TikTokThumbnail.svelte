@@ -1,7 +1,7 @@
 <script lang="ts">
 	import TikTokEmbed from '$lib/TikTokEmbed.svelte';
 	import { Modal } from '@sveltestrap/sveltestrap';
-	import { IconPlayerPlay } from '@tabler/icons-svelte';
+	import { IconPlayerPlay, IconX } from '@tabler/icons-svelte';
 
 	export let url: string;
 	export let img: string;
@@ -33,6 +33,16 @@
 </button>
 
 <Modal body {isOpen} {toggle}>
+	<div class="d-md-none">
+		<!-- svelte-ignore a11y-click-events-have-key-events -->
+		<!-- svelte-ignore a11y-no-static-element-interactions -->
+		<btn
+			class="btn btn-link"
+			style:color="inherit"
+			style:border="none"
+			on:click={() => (isOpen = false)}><IconX /></btn
+		>
+	</div>
 	<TikTokEmbed {url} />
 </Modal>
 
@@ -43,13 +53,6 @@
 		position: relative;
 		border: none;
 		margin-bottom: 0.25rem;
-	}
-	.btn :not(.story) {
-		margin-right: 1rem;
-		margin-bottom: 1rem;
-	}
-	img {
-		max-width: 400px;
 	}
 	img.story {
 		aspect-ratio: 1;

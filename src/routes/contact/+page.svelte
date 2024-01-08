@@ -11,7 +11,7 @@
 	import { base } from '$app/paths';
 </script>
 
-<Container class="px-5">
+<Container class="ps-5 pe-lg-5">
 	<div class="position-relative" style:max-width="840px">
 		<div class="ps-2 pe-4 pb-5">
 			<DanielAvatar src="{base}/contact_memoji.jpg" size={144} />
@@ -53,7 +53,7 @@
 			</div>
 			<div
 				class="graybox2 position-absolute"
-				style:right="-120px"
+				style:right="-20%"
 				style:bottom="-40px"
 				style:top="50%"
 				style:left="50%"

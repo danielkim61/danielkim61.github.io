@@ -3,7 +3,7 @@
 	import { Container } from '@sveltestrap/sveltestrap';
 </script>
 
-<Container class="px-5">
+<Container class="ps-5 pe-lg-5">
 	<div class="position-relative" style:max-width="840px">
 		<div class="ps-2 pe-4 pb-2">
 			<DanielAvatar size={144} />
@@ -43,7 +43,7 @@
 			</div>
 			<div
 				class="graybox2 position-absolute"
-				style:right="-130px"
+				style:right="-20%"
 				style:bottom="-40px"
 				style:top="50%"
 				style:left="50%"

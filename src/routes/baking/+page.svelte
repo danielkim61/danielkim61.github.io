@@ -43,9 +43,9 @@
 
 <Gallery {isOpen} {toggle} bind:index images={bakingImages.map((i) => i.src)} />
 
-<Row class="ms-5 gy-3 gx-3">
+<Row class="ms-md-5 gy-3 gx-3">
 	{#each bakingImages as img, i}
-		<Col md="6">
+		<Col xs="6">
 			<button
 				class="btn p-0 m-0 position-relative"
 				style:border="none"
@@ -68,8 +68,6 @@
 	img.square {
 		aspect-ratio: 1 !important;
 		object-fit: cover;
-		width: 80%;
-		height: 80%;
 	}
 
 	button .hover {

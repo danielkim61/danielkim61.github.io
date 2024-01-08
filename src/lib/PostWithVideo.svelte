@@ -18,7 +18,7 @@
 		on:observe={(e) => (viewable = e.detail.isIntersecting)}
 	>
 		<!-- svelte-ignore a11y-media-has-caption -->
-		<video class="w-100" bind:paused bind:this={videoElement} muted loop controls>
+		<video class="w-100" bind:paused bind:this={videoElement} muted loop controls playsinline>
 			<source {src} />
 			Your browser does not support the video tag.
 		</video>

@@ -24,7 +24,7 @@
 <Post>
 	<Row class="g-1 gy-1">
 		{#each Array(Math.min(images.length, maxImages)) as _, i}
-			<Col md={i <= 1 ? 6 : 4}>
+			<Col xs={i <= 1 ? 6 : 4}>
 				<button
 					class="position-relative btn btn-link p-0 border-none"
 					on:click={() => {
