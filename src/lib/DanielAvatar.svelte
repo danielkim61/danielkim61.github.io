@@ -3,7 +3,7 @@
 	export { classes as class };
 
 	export let size = 24;
-	export let src = 'memoji.jpg';
+	export let src = '/memoji.jpg';
 </script>
 
 <img

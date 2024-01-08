@@ -13,21 +13,21 @@
 	}
 
 	let images = [
-		{ src: 'design/duke.jpg', caption: 'Duke University' },
-		{ src: 'design/unc.jpg', caption: 'University of North Carolina at Chapel Hill' },
-		{ src: 'design/stanford.jpg', caption: 'Stanford University' },
-		{ src: 'design/la.jpg', caption: 'UCLA' },
-		{ src: 'design/cameron.jpg', caption: 'Cameron Indoor Stadium, Duke University' },
-		{ src: 'design/ucb.jpg', caption: 'UC Berkeley' },
-		{ src: 'design/iu.jpg', caption: 'Indiana University' },
-		{ src: 'design/uiuc.jpg', caption: 'University of Illinois Urbana-Champaign' },
-		{ src: 'design/gatech_2.jpg', caption: 'Georgia Tech' },
-		{ src: 'design/gatech.jpg', caption: 'Georgia Tech' },
-		{ src: 'design/love.jpg', caption: 'University of Pennsylvania' },
-		{ src: 'design/ohio.jpg', caption: 'Ohio State University' },
-		{ src: 'design/philly_2.jpg', caption: 'Philadelphia, PA' },
-		{ src: 'design/philly.jpg', caption: 'Philadelphia, PA' },
-		{ src: 'design/upenn.jpg', caption: 'Wharton School of Business, University of Pennsylvania' }
+		{ src: '/design/duke.jpg', caption: 'Duke University' },
+		{ src: '/design/unc.jpg', caption: 'University of North Carolina at Chapel Hill' },
+		{ src: '/design/stanford.jpg', caption: 'Stanford University' },
+		{ src: '/design/la.jpg', caption: 'UCLA' },
+		{ src: '/design/cameron.jpg', caption: 'Cameron Indoor Stadium, Duke University' },
+		{ src: '/design/ucb.jpg', caption: 'UC Berkeley' },
+		{ src: '/design/iu.jpg', caption: 'Indiana University' },
+		{ src: '/design/uiuc.jpg', caption: 'University of Illinois Urbana-Champaign' },
+		{ src: '/design/gatech_2.jpg', caption: 'Georgia Tech' },
+		{ src: '/design/gatech.jpg', caption: 'Georgia Tech' },
+		{ src: '/design/love.jpg', caption: 'University of Pennsylvania' },
+		{ src: '/design/ohio.jpg', caption: 'Ohio State University' },
+		{ src: '/design/philly_2.jpg', caption: 'Philadelphia, PA' },
+		{ src: '/design/philly.jpg', caption: 'Philadelphia, PA' },
+		{ src: '/design/upenn.jpg', caption: 'Wharton School of Business, University of Pennsylvania' }
 	];
 </script>
 

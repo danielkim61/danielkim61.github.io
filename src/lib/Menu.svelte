@@ -11,25 +11,30 @@
 		</a>
 		<a class="mb-4 nav-link" href="/about/">
 			<span class="emoji">🙋🏻‍♂️</span>
-			<span class="menu-title" class:current={$page.url.pathname == '/about'}>About</span>
+			<span class="menu-title" class:current={$page.url.pathname.startsWith('/about')}>About</span>
 		</a>
 		<a class="mb-4 nav-link" href="/baking/">
 			<span class="emoji">🍰</span>
-			<span class="menu-title" class:current={$page.url.pathname == '/baking'}>Baking</span>
+			<span class="menu-title" class:current={$page.url.pathname.startsWith('/baking')}>Baking</span
+			>
 		</a>
 		<a class="mb-4 nav-link" href="/design/">
 			<span class="emoji">🎨</span>
-			<span class="menu-title" class:current={$page.url.pathname == '/design'}>Graphic Design</span>
+			<span class="menu-title" class:current={$page.url.pathname.startsWith('/design')}
+				>Graphic Design</span
+			>
 		</a>
 		<a class="mb-4 nav-link" href="/social_media/">
 			<span class="emoji">📱</span>
-			<span class="menu-title" class:current={$page.url.pathname == '/social_media'}
+			<span class="menu-title" class:current={$page.url.pathname.startsWith('/social_media')}
 				>Social Media</span
 			>
 		</a>
 		<a class="mb-4 nav-link" href="/contact/">
 			<span class="emoji">👨🏻‍💻</span>
-			<span class="menu-title" class:current={$page.url.pathname == '/contact'}>Contact</span>
+			<span class="menu-title" class:current={$page.url.pathname.startsWith('/contact')}
+				>Contact</span
+			>
 		</a>
 	</div>
 </div>
@@ -58,51 +63,6 @@
 	.menu-title.current,
 	.menu-title:hover {
 		text-decoration-color: rgba(0, 0, 0, 0.4);
-	}
-	.nav-link {
-		display: block;
-	}
-	.nav-link {
-		display: block;
-	}
-	.nav-link {
-		display: block;
-	}
-	.nav-link {
-		display: block;
-	}
-	.nav-link {
-		display: block;
-	}
-	.nav-link {
-		display: block;
-	}
-	.nav-link {
-		display: block;
-	}
-	.nav-link {
-		display: block;
-	}
-	.nav-link {
-		display: block;
-	}
-	.nav-link {
-		display: block;
-	}
-	.nav-link {
-		display: block;
-	}
-	.nav-link {
-		display: block;
-	}
-	.nav-link {
-		display: block;
-	}
-	.nav-link {
-		display: block;
-	}
-	.nav-link {
-		display: block;
 	}
 	.nav-link {
 		display: block;

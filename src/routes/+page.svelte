@@ -49,34 +49,34 @@
 	}
 
 	let bakingImages = [
-		'cookies/xmas1.jpg',
-		'cookies/easter.jpg',
-		'cookies/xmas3.jpg',
-		'cookies/cvs1.jpg',
-		'cookies/duke.jpg',
-		'cookies/xmas2.jpg',
-		'cookies/dog.jpg',
-		'cookies/cvs2.jpg',
-		'cookies/alabama.jpg',
-		'cookies/newyork.jpg',
-		'cookies/disco.jpg',
-		'cookies/wedding.jpg'
+		'/cookies/xmas1.jpg',
+		'/cookies/easter.jpg',
+		'/cookies/xmas3.jpg',
+		'/cookies/cvs1.jpg',
+		'/cookies/duke.jpg',
+		'/cookies/xmas2.jpg',
+		'/cookies/dog.jpg',
+		'/cookies/cvs2.jpg',
+		'/cookies/alabama.jpg',
+		'/cookies/newyork.jpg',
+		'/cookies/disco.jpg',
+		'/cookies/wedding.jpg'
 	];
-	let carolinaImages = ['carolina/carolina_ad.jpg', 'carolina/carolina_tees.jpg'];
+	let carolinaImages = ['/carolina/carolina_ad.jpg', '/carolina/carolina_tees.jpg'];
 	let cakeImages = [
-		'cakes/guitar.jpg',
-		'cakes/meg.jpg',
-		'cakes/wedding.jpg',
-		'cakes/unc.jpg',
-		'cakes/mom.jpg',
-		'cakes/sophie.jpg',
-		'cakes/spiderman.jpg',
-		'cakes/chocolate.jpg',
-		'cakes/rose.jpg',
-		'cakes/baby_princess.jpg',
-		'cakes/kim.jpg',
-		'cakes/m.jpg',
-		'cakes/table.jpg'
+		'/cakes/guitar.jpg',
+		'/cakes/meg.jpg',
+		'/cakes/wedding.jpg',
+		'/cakes/unc.jpg',
+		'/cakes/mom.jpg',
+		'/cakes/sophie.jpg',
+		'/cakes/spiderman.jpg',
+		'/cakes/chocolate.jpg',
+		'/cakes/rose.jpg',
+		'/cakes/baby_princess.jpg',
+		'/cakes/kim.jpg',
+		'/cakes/m.jpg',
+		'/cakes/table.jpg'
 	];
 </script>
 
