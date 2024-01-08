@@ -3,7 +3,7 @@
 	import { Container } from '@sveltestrap/sveltestrap';
 </script>
 
-<Container class="ps-5 pe-lg-5">
+<Container class="ps-sm-5 pe-lg-5">
 	<div class="position-relative" style:max-width="840px">
 		<div class="ps-2 pe-4 pb-2">
 			<DanielAvatar size={144} />

@@ -5,13 +5,12 @@
 		IconBrandInstagram,
 		IconBrandLinkedin,
 		IconBrandTiktok,
-		IconDeviceMobile,
 		IconMail
 	} from '@tabler/icons-svelte';
 	import { base } from '$app/paths';
 </script>
 
-<Container class="ps-5 pe-lg-5">
+<Container class="ps-sm-5 pe-lg-5">
 	<div class="position-relative" style:max-width="840px">
 		<div class="ps-2 pe-4 pb-5">
 			<DanielAvatar src="{base}/contact_memoji.jpg" size={144} />

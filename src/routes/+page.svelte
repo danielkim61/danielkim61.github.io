@@ -82,7 +82,7 @@
 	];
 </script>
 
-<div class="m-auto px-2" style:max-width="600px">
+<div class="m-auto px-sm-2" style:max-width="600px">
 	<div class="d-flex mb-4 mb-md-5">
 		<div class="story-head d-flex flex-column align-items-center">
 			<TikTokThumbnail story url="https://www.tiktok.com/t/ZT84duJXY/" img="tiktok/hairspray.jpg" />

@@ -27,41 +27,55 @@
 		<NavbarBrand href="{base}/" class="title">Daniel Kim</NavbarBrand>
 		<Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>
 			<Nav class="ms-auto" navbar>
-				<a class="nav-link mt-1" href="{base}/">
-					<span class="emoji">🏠</span>
-					<span class="menu-title" class:current={$page.url.pathname == `${base}/`}>Home</span>
-				</a>
-				<a class="nav-link" href="{base}/about/">
-					<span class="emoji">🙋🏻‍♂️</span>
-					<span class="menu-title" class:current={$page.url.pathname.startsWith(`${base}/about`)}
-						>About</span
-					>
-				</a>
-				<a class="nav-link" href="{base}/baking/">
-					<span class="emoji">🍰</span>
-					<span class="menu-title" class:current={$page.url.pathname.startsWith(`${base}/baking`)}
-						>Baking</span
-					>
-				</a>
-				<a class="nav-link" href="{base}/design/">
-					<span class="emoji">🎨</span>
-					<span class="menu-title" class:current={$page.url.pathname.startsWith(`${base}/design`)}
-						>Graphic Design</span
-					>
-				</a>
-				<a class="nav-link" href="{base}/social_media/">
-					<span class="emoji">📱</span>
-					<span
-						class="menu-title"
-						class:current={$page.url.pathname.startsWith(`${base}/social_media`)}>Social Media</span
-					>
-				</a>
-				<a class="nav-link" href="{base}/contact/">
-					<span class="emoji">👨🏻‍💻</span>
-					<span class="menu-title" class:current={$page.url.pathname.startsWith(`${base}/contact`)}
-						>Contact</span
-					>
-				</a>
+				<NavItem>
+					<NavLink href="{base}/" on:click={() => (isOpen = false)}>
+						<span class="emoji">🏠</span>
+						<span class="menu-title" class:current={$page.url.pathname == `${base}/`}>Home</span>
+					</NavLink>
+				</NavItem>
+				<NavItem>
+					<NavLink href="{base}/about/" on:click={() => (isOpen = false)}>
+						<span class="emoji">🙋🏻‍♂️</span>
+						<span class="menu-title" class:current={$page.url.pathname.startsWith(`${base}/about`)}
+							>About</span
+						>
+					</NavLink>
+				</NavItem>
+				<NavItem>
+					<NavLink href="{base}/baking/" on:click={() => (isOpen = false)}>
+						<span class="emoji">🍰</span>
+						<span class="menu-title" class:current={$page.url.pathname.startsWith(`${base}/baking`)}
+							>Baking</span
+						>
+					</NavLink>
+				</NavItem>
+				<NavItem>
+					<NavLink href="{base}/design/" on:click={() => (isOpen = false)}>
+						<span class="emoji">🎨</span>
+						<span class="menu-title" class:current={$page.url.pathname.startsWith(`${base}/design`)}
+							>Graphic Design</span
+						>
+					</NavLink>
+				</NavItem>
+				<NavItem>
+					<NavLink href="{base}/social_media/" on:click={() => (isOpen = false)}>
+						<span class="emoji">📱</span>
+						<span
+							class="menu-title"
+							class:current={$page.url.pathname.startsWith(`${base}/social_media`)}
+							>Social Media</span
+						>
+					</NavLink>
+				</NavItem>
+				<NavItem>
+					<NavLink href="{base}/contact/" on:click={() => (isOpen = false)}>
+						<span class="emoji">👨🏻‍💻</span>
+						<span
+							class="menu-title"
+							class:current={$page.url.pathname.startsWith(`${base}/contact`)}>Contact</span
+						>
+					</NavLink>
+				</NavItem>
 			</Nav>
 		</Collapse>
 	</Navbar>
