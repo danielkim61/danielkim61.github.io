@@ -50,6 +50,14 @@
 					</a>
 				</p>
 			</div>
+			<div
+				class="graybox2 position-absolute"
+				style:right="-120px"
+				style:bottom="-40px"
+				style:top="50%"
+				style:left="50%"
+				style:z-index="-20"
+			/>
 		</div>
 		<div
 			class="graybox position-absolute w-100"

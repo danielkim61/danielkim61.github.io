@@ -97,7 +97,7 @@
 		<div class="story-head d-flex flex-column align-items-center">
 			<TikTokThumbnail story url="https://www.tiktok.com/t/ZT84dsYtm/" img="tiktok/apple.jpg" />
 			<div class="d-flex align-items-center">
-				<IconPlayerPlayFilled class="d-inline me-1" size={16} /> 53M
+				<IconPlayerPlayFilled class="d-inline me-1" size={16} /> 5.3M
 			</div>
 		</div>
 		<div class="story-head d-flex flex-column align-items-center">
@@ -130,7 +130,7 @@
 		bind:paused={v1Paused}
 		src="custom_print.mp4"
 		caption="Animation created using Jitter, CapCut, and iMovie to promote custom prints I drew of different universities
-	across the US."
+	across the US (note: website is no longer active)."
 	/>
 
 	<PostWithGallery
@@ -155,7 +155,7 @@ which was printed on thousands of T-shirts given to UNC students on the first da
 		bind:viewable={v3Viewable}
 		bind:paused={v3Paused}
 		src="berkeley.mp4"
-		caption="Each print drawn on iPad Pro using Procreate"
+		caption="Each print is drawn with an Apple Pencil on iPad Pro using Procreate"
 	/>
 </div>
 

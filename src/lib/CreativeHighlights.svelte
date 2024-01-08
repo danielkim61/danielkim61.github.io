@@ -1,6 +1,6 @@
 <div class="py-4 vh-100 sticky-top">
-	<p class="callout graybox py-2 px-3">Creative Highlights</p>
-	<div class="graybox p-3">
+	<p class="callout graybox2 py-2 px-3">Creative Highlights</p>
+	<div class="graybox2 p-3">
 		<p><span class="callout">20M</span> total TikTok video views</p>
 		<p><span class="callout">22K</span> TikTok followers</p>
 

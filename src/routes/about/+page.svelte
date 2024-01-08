@@ -7,7 +7,7 @@
 	<div class="position-relative" style:max-width="840px">
 		<div class="ps-2 pe-4 pb-2">
 			<DanielAvatar size={144} />
-			<div class="ps-3" style:max-width="700px">
+			<div class="ps-3 position-relative" style:max-width="700px">
 				<p class="pt-4">Hello! I’m Daniel.</p>
 				<p>
 					I work for CVS Health in the
@@ -41,6 +41,14 @@
 					</li>
 				</ul>
 			</div>
+			<div
+				class="graybox2 position-absolute"
+				style:right="-130px"
+				style:bottom="-40px"
+				style:top="50%"
+				style:left="50%"
+				style:z-index="-20"
+			/>
 		</div>
 		<div
 			class="graybox position-absolute w-100"
