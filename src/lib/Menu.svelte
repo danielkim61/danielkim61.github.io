@@ -8,32 +8,35 @@
 		<a class="mb-4 nav-link title" href="{base}/">Daniel Kim</a>
 		<a class="mb-4 nav-link" href="{base}/">
 			<span class="emoji">🏠</span>
-			<span class="menu-title" class:current={$page.url.pathname == '/'}>Home</span>
+			<span class="menu-title" class:current={$page.url.pathname == `${base}/`}>Home</span>
 		</a>
 		<a class="mb-4 nav-link" href="{base}/about/">
 			<span class="emoji">🙋🏻‍♂️</span>
-			<span class="menu-title" class:current={$page.url.pathname.startsWith('/about')}>About</span>
+			<span class="menu-title" class:current={$page.url.pathname.startsWith(`${base}/about`)}
+				>About</span
+			>
 		</a>
 		<a class="mb-4 nav-link" href="{base}/baking/">
 			<span class="emoji">🍰</span>
-			<span class="menu-title" class:current={$page.url.pathname.startsWith('/baking')}>Baking</span
+			<span class="menu-title" class:current={$page.url.pathname.startsWith(`${base}/baking`)}
+				>Baking</span
 			>
 		</a>
 		<a class="mb-4 nav-link" href="{base}/design/">
 			<span class="emoji">🎨</span>
-			<span class="menu-title" class:current={$page.url.pathname.startsWith('/design')}
+			<span class="menu-title" class:current={$page.url.pathname.startsWith(`${base}/design`)}
 				>Graphic Design</span
 			>
 		</a>
 		<a class="mb-4 nav-link" href="{base}/social_media/">
 			<span class="emoji">📱</span>
-			<span class="menu-title" class:current={$page.url.pathname.startsWith('/social_media')}
+			<span class="menu-title" class:current={$page.url.pathname.startsWith(`${base}/social_media`)}
 				>Social Media</span
 			>
 		</a>
 		<a class="mb-4 nav-link" href="{base}/contact/">
 			<span class="emoji">👨🏻‍💻</span>
-			<span class="menu-title" class:current={$page.url.pathname.startsWith('/contact')}
+			<span class="menu-title" class:current={$page.url.pathname.startsWith(`${base}/contact`)}
 				>Contact</span
 			>
 		</a>

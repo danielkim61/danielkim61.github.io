@@ -3,6 +3,7 @@
 	import PostWithVideo from '$lib/PostWithVideo.svelte';
 	import TikTokThumbnail from '$lib/TikTokThumbnail.svelte';
 	import { IconPlayerPlayFilled } from '@tabler/icons-svelte';
+	import { base } from '$app/paths';
 
 	let v1PreviousViewable = false;
 	let v2PreviousViewable = false;
@@ -49,34 +50,34 @@
 	}
 
 	let bakingImages = [
-		'/cookies/xmas1.jpg',
-		'/cookies/easter.jpg',
-		'/cookies/xmas3.jpg',
-		'/cookies/cvs1.jpg',
-		'/cookies/duke.jpg',
-		'/cookies/xmas2.jpg',
-		'/cookies/dog.jpg',
-		'/cookies/cvs2.jpg',
-		'/cookies/alabama.jpg',
-		'/cookies/newyork.jpg',
-		'/cookies/disco.jpg',
-		'/cookies/wedding.jpg'
+		`${base}/cookies/xmas1.jpg`,
+		`${base}/cookies/easter.jpg`,
+		`${base}/cookies/xmas3.jpg`,
+		`${base}/cookies/cvs1.jpg`,
+		`${base}/cookies/duke.jpg`,
+		`${base}/cookies/xmas2.jpg`,
+		`${base}/cookies/dog.jpg`,
+		`${base}/cookies/cvs2.jpg`,
+		`${base}/cookies/alabama.jpg`,
+		`${base}/cookies/newyork.jpg`,
+		`${base}/cookies/disco.jpg`,
+		`${base}/cookies/wedding.jpg`
 	];
-	let carolinaImages = ['/carolina/carolina_ad.jpg', '/carolina/carolina_tees.jpg'];
+	let carolinaImages = [`${base}/carolina/carolina_ad.jpg`, `${base}/carolina/carolina_tees.jpg`];
 	let cakeImages = [
-		'/cakes/guitar.jpg',
-		'/cakes/meg.jpg',
-		'/cakes/wedding.jpg',
-		'/cakes/unc.jpg',
-		'/cakes/mom.jpg',
-		'/cakes/sophie.jpg',
-		'/cakes/spiderman.jpg',
-		'/cakes/chocolate.jpg',
-		'/cakes/rose.jpg',
-		'/cakes/baby_princess.jpg',
-		'/cakes/kim.jpg',
-		'/cakes/m.jpg',
-		'/cakes/table.jpg'
+		`${base}/cakes/guitar.jpg`,
+		`${base}/cakes/meg.jpg`,
+		`${base}/cakes/wedding.jpg`,
+		`${base}/cakes/unc.jpg`,
+		`${base}/cakes/mom.jpg`,
+		`${base}/cakes/sophie.jpg`,
+		`${base}/cakes/spiderman.jpg`,
+		`${base}/cakes/chocolate.jpg`,
+		`${base}/cakes/rose.jpg`,
+		`${base}/cakes/baby_princess.jpg`,
+		`${base}/cakes/kim.jpg`,
+		`${base}/cakes/m.jpg`,
+		`${base}/cakes/table.jpg`
 	];
 </script>
 

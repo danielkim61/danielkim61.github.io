@@ -8,12 +8,13 @@
 		IconDeviceMobile,
 		IconMail
 	} from '@tabler/icons-svelte';
+	import { base } from '$app/paths';
 </script>
 
 <Container class="px-5">
 	<div class="position-relative" style:max-width="840px">
 		<div class="ps-2 pe-4 pb-5">
-			<DanielAvatar src="/contact_memoji.jpg" size={144} />
+			<DanielAvatar src="{base}/contact_memoji.jpg" size={144} />
 			<div class="ps-3" style:max-width="700px">
 				<h2 class="pt-4 mb-3">Get in Touch</h2>
 				<p>
