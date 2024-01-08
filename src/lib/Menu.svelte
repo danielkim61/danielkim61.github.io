@@ -1,36 +1,37 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { page } from '$app/stores';
 </script>
 
 <div class="py-4 vh-100 sticky-top">
 	<div class="h-100 menu-border pe-5">
-		<a class="mb-4 nav-link title" href="/">Daniel Kim</a>
-		<a class="mb-4 nav-link" href="/">
+		<a class="mb-4 nav-link title" href="{base}/">Daniel Kim</a>
+		<a class="mb-4 nav-link" href="{base}/">
 			<span class="emoji">🏠</span>
 			<span class="menu-title" class:current={$page.url.pathname == '/'}>Home</span>
 		</a>
-		<a class="mb-4 nav-link" href="/about/">
+		<a class="mb-4 nav-link" href="{base}/about/">
 			<span class="emoji">🙋🏻‍♂️</span>
 			<span class="menu-title" class:current={$page.url.pathname.startsWith('/about')}>About</span>
 		</a>
-		<a class="mb-4 nav-link" href="/baking/">
+		<a class="mb-4 nav-link" href="{base}/baking/">
 			<span class="emoji">🍰</span>
 			<span class="menu-title" class:current={$page.url.pathname.startsWith('/baking')}>Baking</span
 			>
 		</a>
-		<a class="mb-4 nav-link" href="/design/">
+		<a class="mb-4 nav-link" href="{base}/design/">
 			<span class="emoji">🎨</span>
 			<span class="menu-title" class:current={$page.url.pathname.startsWith('/design')}
 				>Graphic Design</span
 			>
 		</a>
-		<a class="mb-4 nav-link" href="/social_media/">
+		<a class="mb-4 nav-link" href="{base}/social_media/">
 			<span class="emoji">📱</span>
 			<span class="menu-title" class:current={$page.url.pathname.startsWith('/social_media')}
 				>Social Media</span
 			>
 		</a>
-		<a class="mb-4 nav-link" href="/contact/">
+		<a class="mb-4 nav-link" href="{base}/contact/">
 			<span class="emoji">👨🏻‍💻</span>
 			<span class="menu-title" class:current={$page.url.pathname.startsWith('/contact')}
 				>Contact</span
