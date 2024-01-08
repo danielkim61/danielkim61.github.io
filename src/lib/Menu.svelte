@@ -1,26 +1,35 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 </script>
 
 <div class="py-4 vh-100 sticky-top">
 	<div class="h-100 menu-border pe-5">
 		<a class="mb-4 nav-link title" href="/">Daniel Kim</a>
 		<a class="mb-4 nav-link" href="/">
-			<span class="emoji">🏠</span> <span class="menu-title">Home</span>
+			<span class="emoji">🏠</span>
+			<span class="menu-title" class:current={$page.url.pathname == '/'}>Home</span>
 		</a>
 		<a class="mb-4 nav-link" href="/about/">
-			<span class="emoji">🙋🏻‍♂️</span> <span class="menu-title">About</span>
+			<span class="emoji">🙋🏻‍♂️</span>
+			<span class="menu-title" class:current={$page.url.pathname == '/about'}>About</span>
 		</a>
 		<a class="mb-4 nav-link" href="/baking/">
-			<span class="emoji">🍰</span> <span class="menu-title">Baking</span>
+			<span class="emoji">🍰</span>
+			<span class="menu-title" class:current={$page.url.pathname == '/baking'}>Baking</span>
 		</a>
 		<a class="mb-4 nav-link" href="/design/">
-			<span class="emoji">🎨</span> <span class="menu-title">Graphic Design</span>
+			<span class="emoji">🎨</span>
+			<span class="menu-title" class:current={$page.url.pathname == '/design'}>Graphic Design</span>
 		</a>
 		<a class="mb-4 nav-link" href="/social_media/">
-			<span class="emoji">📱</span> <span class="menu-title">Social Media</span>
+			<span class="emoji">📱</span>
+			<span class="menu-title" class:current={$page.url.pathname == '/social_media'}
+				>Social Media</span
+			>
 		</a>
 		<a class="mb-4 nav-link" href="/contact/">
-			<span class="emoji">👨🏻‍💻</span> <span class="menu-title">Contact</span>
+			<span class="emoji">👨🏻‍💻</span>
+			<span class="menu-title" class:current={$page.url.pathname == '/contact'}>Contact</span>
 		</a>
 	</div>
 </div>
@@ -31,7 +40,7 @@
 	}
 	.title {
 		font-size: 24px;
-		font-weight: 500;
+		font-weight: 600;
 	}
 	.emoji {
 		font-size: 24px;
@@ -40,6 +49,15 @@
 		font-size: 20px;
 		font-weight: 500;
 		padding-left: 0.5rem;
+		text-decoration: underline;
+		text-decoration-thickness: 1px;
+		text-underline-offset: 3px;
+		text-decoration-color: rgba(0, 0, 0, 0);
+		transition: text-decoration-color 0.2s ease;
+	}
+	.menu-title.current,
+	.menu-title:hover {
+		text-decoration-color: rgba(0, 0, 0, 0.4);
 	}
 	.nav-link {
 		display: block;

@@ -91,7 +91,7 @@
 		<div class="story-head d-flex flex-column align-items-center">
 			<TikTokThumbnail story url="https://www.tiktok.com/t/ZT84d59wr/" img="tiktok/vitamix.jpg" />
 			<div class="d-flex align-items-center">
-				<IconPlayerPlayFilled class="d-inline me-1" size={16} /> 165K
+				<IconPlayerPlayFilled class="d-inline me-1" size={16} /> 166K
 			</div>
 		</div>
 		<div class="story-head d-flex flex-column align-items-center">
@@ -109,7 +109,7 @@
 		<div class="story-head d-flex flex-column align-items-center">
 			<TikTokThumbnail story url="https://www.tiktok.com/t/ZT84dp7tq/" img="tiktok/kdrama.jpg" />
 			<div class="d-flex align-items-center">
-				<IconPlayerPlayFilled class="d-inline me-1" size={16} /> 262K
+				<IconPlayerPlayFilled class="d-inline me-1" size={16} /> 263K
 			</div>
 		</div>
 		<div class="story-head d-flex flex-column align-items-center">

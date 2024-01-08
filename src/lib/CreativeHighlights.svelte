@@ -1,4 +1,4 @@
-<div class="py-4">
+<div class="py-4 vh-100 sticky-top">
 	<p class="callout graybox py-2 px-3">Creative Highlights</p>
 	<div class="graybox p-3">
 		<p><span class="callout">20M</span> total TikTok video views</p>
