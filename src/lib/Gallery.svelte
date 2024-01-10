@@ -39,7 +39,7 @@
 		>
 			<IconChevronLeft />
 		</button>
-		<div class="text-center d-flex align-items-center justify-content-center">
+		<div class="text-center d-flex align-items-center justify-content-center flex-fill">
 			<img src={images[index]} alt="Gallery" />
 		</div>
 		<button
