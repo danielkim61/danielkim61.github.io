@@ -11,3 +11,15 @@
 a {
     color: inherit;
 }
+
+@font-face {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 1 1000;
+    font-display: swap;
+    src: url(DMSans.ttf) format('truetype');
+}
+
+body {
+    font-family: 'DM Sans', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
