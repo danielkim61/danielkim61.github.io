@@ -1,5 +1,5 @@
 <script lang="ts">
-	import DanielAvatar from '$lib/DanielAvatar.svelte';
+	import Avatar from '$lib/Avatar.svelte';
 	import { Container } from '@sveltestrap/sveltestrap';
 	import {
 		IconBrandInstagram,
@@ -13,7 +13,7 @@
 <Container class="ps-sm-5 pe-lg-5">
 	<div class="position-relative" style:max-width="840px">
 		<div class="ps-2 pe-4 pb-5">
-			<DanielAvatar src="{base}/contact_memoji.jpg" size={144} />
+			<Avatar src="{base}/contact_memoji.jpg" size={144} />
 			<div class="ps-3" style:max-width="700px">
 				<h2 class="pt-4 mb-3">Get in Touch</h2>
 				<p>

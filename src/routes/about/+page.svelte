@@ -1,12 +1,12 @@
 <script lang="ts">
-	import DanielAvatar from '$lib/DanielAvatar.svelte';
+	import Avatar from '$lib/Avatar.svelte';
 	import { Container } from '@sveltestrap/sveltestrap';
 </script>
 
 <Container class="ps-sm-5 pe-lg-5">
 	<div class="position-relative" style:max-width="840px">
 		<div class="ps-2 pe-4 pb-2">
-			<DanielAvatar size={144} />
+			<Avatar size={144} />
 			<div class="ps-3 position-relative" style:max-width="700px">
 				<p class="pt-4">Hello! I’m Daniel.</p>
 				<p>

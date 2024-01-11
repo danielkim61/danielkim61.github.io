@@ -5,6 +5,8 @@
 	import { IconPlayerPlayFilled } from '@tabler/icons-svelte';
 	import { base } from '$app/paths';
 	import CreativeHighlights from '$lib/CreativeHighlights.svelte';
+	import { Col, Row } from '@sveltestrap/sveltestrap';
+	import Avatar from '$lib/Avatar.svelte';
 
 	let v1PreviousViewable = false;
 	let v2PreviousViewable = false;
@@ -126,6 +128,26 @@
 		images={bakingImages}
 		caption="I design and produce custom cookie orders for corporate events, weddings, birthdays, and more."
 	/>
+
+	<div class="graybox p-2 mb-4">
+		<div class="d-flex align-items-top pb-2">
+			<Avatar src="{base}/michele_butman.jpg" class="me-1" />
+			<div>
+				<strong>Michele Butman</strong>
+				<span style:font-size=".85rem" style:color="gray" class="ps-1"
+					>Market Head of Sales, Aetna NY/NJ</span
+				>
+			</div>
+		</div>
+
+		<p>
+			Some of the most impressive qualities about Daniel that I think would translate to any role
+			but especially a product role are his ability to run with things independently, his strong
+			communication and collaboration skills, and his ability to be innovative with data, the way
+			its collected, stored, and presented.
+		</p>
+		He is extremely thorough, organized, and brings a really fresh perspective to everything.
+	</div>
 
 	<PostWithVideo
 		bind:viewable={v1Viewable}

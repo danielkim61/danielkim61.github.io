@@ -1,5 +1,5 @@
 <script lang="ts">
-	import DanielAvatar from '$lib/DanielAvatar.svelte';
+	import Avatar from '$lib/Avatar.svelte';
 	import Post from '$lib/Post.svelte';
 	import IntersectionObserver from 'svelte-intersection-observer';
 
@@ -24,7 +24,7 @@
 		</video>
 	</IntersectionObserver>
 	<div class="graybox p-2">
-		<DanielAvatar class="d-inline-block align-top" />
+		<Avatar class="d-inline-block align-top" />
 		<strong>Daniel</strong>
 		{caption}
 	</div>

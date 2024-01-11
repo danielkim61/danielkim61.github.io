@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { Row, Col } from '@sveltestrap/sveltestrap';
-	import DanielAvatar from './DanielAvatar.svelte';
+	import Avatar from './Avatar.svelte';
 	import Gallery from './Gallery.svelte';
 	import Post from './Post.svelte';
 
@@ -46,7 +46,7 @@
 			</Col>
 		{/each}
 		<Col class="graybox p-2">
-			<DanielAvatar class="d-inline-block align-top" />
+			<Avatar class="d-inline-block align-top" />
 			<strong>Daniel</strong>
 			{caption}
 		</Col>
