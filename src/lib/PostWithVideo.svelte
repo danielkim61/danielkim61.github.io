@@ -17,8 +17,17 @@
 		threshold={0.5}
 		on:observe={(e) => (viewable = e.detail.isIntersecting)}
 	>
-		<!-- svelte-ignore a11y-media-has-caption -->
-		<video class="w-100" bind:paused bind:this={videoElement} muted loop controls playsinline>
+		<video
+			class="w-100"
+			style:border-radius="12px"
+			style:border=".5rem solid #f6f6f6"
+			bind:paused
+			bind:this={videoElement}
+			muted
+			loop
+			controls
+			playsinline
+		>
 			<source {src} />
 			Your browser does not support the video tag.
 		</video>
