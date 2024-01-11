@@ -20,66 +20,64 @@
 	}
 </script>
 
-<div class="container">
-	<!-- TODO Refactor with Menu component -->
-	<Navbar class="d-sm-none" sticky="top" light={true} color="white">
-		<NavbarToggler on:click={() => (isOpen = !isOpen)} />
-		<NavbarBrand href="{base}/" class="title">Daniel Kim</NavbarBrand>
-		<Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>
-			<Nav class="ms-auto" navbar>
-				<NavItem>
-					<NavLink href="{base}/" on:click={() => (isOpen = false)}>
-						<span class="emoji">🏠</span>
-						<span class="menu-title" class:current={$page.url.pathname == `${base}/`}>Home</span>
-					</NavLink>
-				</NavItem>
-				<NavItem>
-					<NavLink href="{base}/about/" on:click={() => (isOpen = false)}>
-						<span class="emoji">🙋🏻‍♂️</span>
-						<span class="menu-title" class:current={$page.url.pathname.startsWith(`${base}/about`)}
-							>About</span
-						>
-					</NavLink>
-				</NavItem>
-				<NavItem>
-					<NavLink href="{base}/baking/" on:click={() => (isOpen = false)}>
-						<span class="emoji">🍰</span>
-						<span class="menu-title" class:current={$page.url.pathname.startsWith(`${base}/baking`)}
-							>Baking</span
-						>
-					</NavLink>
-				</NavItem>
-				<NavItem>
-					<NavLink href="{base}/design/" on:click={() => (isOpen = false)}>
-						<span class="emoji">🎨</span>
-						<span class="menu-title" class:current={$page.url.pathname.startsWith(`${base}/design`)}
-							>Graphic Design</span
-						>
-					</NavLink>
-				</NavItem>
-				<NavItem>
-					<NavLink href="{base}/social_media/" on:click={() => (isOpen = false)}>
-						<span class="emoji">📱</span>
-						<span
-							class="menu-title"
-							class:current={$page.url.pathname.startsWith(`${base}/social_media`)}
-							>Social Media</span
-						>
-					</NavLink>
-				</NavItem>
-				<NavItem>
-					<NavLink href="{base}/contact/" on:click={() => (isOpen = false)}>
-						<span class="emoji">👨🏻‍💻</span>
-						<span
-							class="menu-title"
-							class:current={$page.url.pathname.startsWith(`${base}/contact`)}>Contact</span
-						>
-					</NavLink>
-				</NavItem>
-			</Nav>
-		</Collapse>
-	</Navbar>
+<!-- TODO Refactor with Menu component -->
+<Navbar class="d-sm-none" sticky="top" light={true} color="white">
+	<NavbarToggler on:click={() => (isOpen = !isOpen)} />
+	<NavbarBrand href="{base}/" class="title">Daniel Kim</NavbarBrand>
+	<Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>
+		<Nav class="ms-auto" navbar>
+			<NavItem>
+				<NavLink href="{base}/" on:click={() => (isOpen = false)}>
+					<span class="emoji">🏠</span>
+					<span class="menu-title" class:current={$page.url.pathname == `${base}/`}>Home</span>
+				</NavLink>
+			</NavItem>
+			<NavItem>
+				<NavLink href="{base}/about/" on:click={() => (isOpen = false)}>
+					<span class="emoji">🙋🏻‍♂️</span>
+					<span class="menu-title" class:current={$page.url.pathname.startsWith(`${base}/about`)}
+						>About</span
+					>
+				</NavLink>
+			</NavItem>
+			<NavItem>
+				<NavLink href="{base}/baking/" on:click={() => (isOpen = false)}>
+					<span class="emoji">🍰</span>
+					<span class="menu-title" class:current={$page.url.pathname.startsWith(`${base}/baking`)}
+						>Baking</span
+					>
+				</NavLink>
+			</NavItem>
+			<NavItem>
+				<NavLink href="{base}/design/" on:click={() => (isOpen = false)}>
+					<span class="emoji">🎨</span>
+					<span class="menu-title" class:current={$page.url.pathname.startsWith(`${base}/design`)}
+						>Graphic Design</span
+					>
+				</NavLink>
+			</NavItem>
+			<NavItem>
+				<NavLink href="{base}/social_media/" on:click={() => (isOpen = false)}>
+					<span class="emoji">📱</span>
+					<span
+						class="menu-title"
+						class:current={$page.url.pathname.startsWith(`${base}/social_media`)}>Social Media</span
+					>
+				</NavLink>
+			</NavItem>
+			<NavItem>
+				<NavLink href="{base}/contact/" on:click={() => (isOpen = false)}>
+					<span class="emoji">👨🏻‍💻</span>
+					<span class="menu-title" class:current={$page.url.pathname.startsWith(`${base}/contact`)}
+						>Contact</span
+					>
+				</NavLink>
+			</NavItem>
+		</Nav>
+	</Collapse>
+</Navbar>
 
+<div class="container-lg">
 	<div class="d-flex">
 		<Menu />
 		<div class="col pt-4">
@@ -115,5 +113,9 @@
 	.menu-title.current,
 	.menu-title:hover {
 		text-decoration-color: rgba(0, 0, 0, 0.4);
+	}
+
+	:global(.navbar-brand) {
+		margin-right: 0;
 	}
 </style>

@@ -5,7 +5,6 @@
 	import { IconPlayerPlayFilled } from '@tabler/icons-svelte';
 	import { base } from '$app/paths';
 	import CreativeHighlights from '$lib/CreativeHighlights.svelte';
-	import { Col, Row } from '@sveltestrap/sveltestrap';
 	import Avatar from '$lib/Avatar.svelte';
 
 	let v1PreviousViewable = false;
