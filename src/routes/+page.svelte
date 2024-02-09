@@ -141,9 +141,9 @@
 
 		<p>
 			Some of the most impressive qualities about Daniel that I think would translate to any role
-			but especially a product role are his ability to run with things independently, his strong
-			communication and collaboration skills, and his ability to be innovative with data, the way
-			its collected, stored, and presented.
+			are his ability to run with things independently, his strong communication and collaboration
+			skills, and his ability to be innovative with data, the way its collected, stored, and
+			presented.
 		</p>
 		He is extremely thorough, organized, and brings a really fresh perspective to everything.
 	</div>
@@ -161,6 +161,24 @@
 		caption="In 2022, I worked directly with the head of UNC Chapel Hill student activities to create this design
 which was printed on thousands of T-shirts given to UNC students on the first day of class."
 	/>
+
+	<div class="graybox p-2 mb-4">
+		<div class="d-flex align-items-top pb-2">
+			<Avatar src="{base}/dan_andrade.jpg" class="me-1" />
+			<div>
+				<strong>Dan Andrade</strong>
+				<span style:font-size=".85rem" style:color="gray" class="ps-1">Groom</span>
+			</div>
+		</div>
+		<p>
+			It was a privilege to have Daniel make our wedding cake - an elegant three-tiered cake with
+			the perfect touch of flowers and packed with amazing flavor. He did an excellent job catering
+			to my wife's and my tastes and delivered the cake without a hitch.
+		</p>
+
+		We're eternally grateful to Daniel for bringing style, substance, and smiles to our wedding with
+		his cake!
+	</div>
 
 	<PostWithGallery
 		images={cakeImages}
