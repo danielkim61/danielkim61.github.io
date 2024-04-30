@@ -10,17 +10,14 @@
 			<div class="ps-3 position-relative" style:max-width="700px">
 				<p class="pt-4">Hello! I’m Daniel.</p>
 				<p>
-					I work for CVS Health in the
+					I work in Transit and EDU partnerships at Lyft. Prior to that, I was in the
 					<a
 						href="https://jobs.cvshealth.com/general-management-talent-programs/general-management-development-program/"
 					>
 						General Management Development Program</a
-					>, sponsored by CVS President and CEO, Karen Lynch. I'm currently a visual designer in the
-					proposal space. Prior to that, I was an account manager for Aetna in the New York & New
-					Jersey markets and a data analyst working to position CVS Health's behavioral health
-					products and services.
+					>, sponsored by CVS President and CEO, Karen Lynch. 
 				</p>
-				<p>Outside of corporate healthcare, I enjoy a host of creative endeavors:</p>
+				<p>Outside of tech, I enjoy a host of creative endeavors:</p>
 
 				<ul>
 					<li>
