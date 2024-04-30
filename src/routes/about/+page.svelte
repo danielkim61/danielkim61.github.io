@@ -10,7 +10,12 @@
 			<div class="ps-3 position-relative" style:max-width="700px">
 				<p class="pt-4">Hello! I’m Daniel.</p>
 				<p>
-					I work in Transit and EDU partnerships at Lyft. Prior to that, I was in the
+					I work in 
+					<a
+						href="https://www.lyft.com/transit/partnerships"
+					>
+						Transit and EDU partnerships</a
+					> at Lyft. Prior to that, I was in the
 					<a
 						href="https://jobs.cvshealth.com/general-management-talent-programs/general-management-development-program/"
 					>
